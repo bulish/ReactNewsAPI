@@ -25,7 +25,7 @@ function App() {
 		if (!info) {
 			const information = axios
 				.get(
-					`http://newsapi.org/v2/top-headlines?country=${country}&apiKey=7b47161240844861810e26b117137a19`,
+					`https://newsapi.org/v2/top-headlines?country=${country}&apiKey=7b47161240844861810e26b117137a19`,
 				)
 				.then(data => {
 					setInfo(data.data);
@@ -56,7 +56,7 @@ function App() {
 	const searchFunction = () => {
 		const information = axios
 			.get(
-				`http://newsapi.org/v2/top-headlines?country=${input}&apiKey=7b47161240844861810e26b117137a19`,
+				`https://newsapi.org/v2/top-headlines?country=${input}&apiKey=7b47161240844861810e26b117137a19`,
 			)
 			.then(data => {
 				setInfo(data.data);
